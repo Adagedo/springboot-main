@@ -34,7 +34,7 @@ In simple term, the **controller** recives users request, interact with the **mo
 
 # Download and Install Maven
 
-- Go to the official Apache Maven download page: ***<https://maven.apache.org/download.cgi> ***
+- Go to the official Apache Maven download page <https://maven.apache.org/download.cgi>
 
 - Download the latest binary zip archive (e.g., apache-maven-3.9.9-bin.zip).
 
