@@ -63,6 +63,11 @@ public class HomeController {
     public String CreatePost(String userRequestData) {
         /*
          * Now i Know its not ideal to send back a users data, but for the sake of our learning, its ok to.
+         * Now be for Adding the annotation, try sending a request to the routes and oberves the response.
+         * Still not getting the reponse back right?? Note for now the userRequest data should only be a plane text string or you can still send a Json data also
+         * Now The main reason why we are not getting a response is because spring does not know what the userRequestDAta is.
+         * Like spring will be :) ohh what is this I dont underStand this... argurment here.
+         * This is where another annotations comes in which your seeing currently Know as the requetBody
          */
         return "post created!!!" + "here is the data you sent" + userRequestData;
     }
