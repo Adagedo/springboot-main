@@ -1,7 +1,9 @@
 package com.example.demo;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 /*
  * to make the HomeController a valid controller, we decorate it with the 
@@ -12,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     /*
      * when we send a request to the root of our website, we want this method to be called.
-     * so it will be decorated with the 
+     * so it will be decorated with the an anotation
      * to view this in action, go to the resource folder, we created a static/root-main.html which 
      * servers as our views.
      * to run this project, run mvn:spring-boot:runon your terminal.
@@ -27,8 +29,11 @@ public class HomeController {
      * we are going to dive a little into building or creating our own apis in spring
      * enjoy...
      */
-    @RequestMapping("/")
-    public String main() {
-        return "root-main.html";
+    // a get request routes
+    @GetMapping("/")
+    @ResponseStatus(HttpStatus.OK)// here, you can customise your response status
+    public String Home(){
+        return "Home routes";
     }
+
 }
