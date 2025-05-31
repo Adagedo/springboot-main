@@ -38,8 +38,12 @@ public class HomeController {
     // a routes that in the future will return a list of post from our users
     @GetMapping("/post")
     @ResponseStatus(HttpStatus.OK)
-    public String getPost(){
+    public String getPost() {
         return "fetching user's post...";
     }
+
+    /*
+     * Now we have seen out get route in Action. feel free to modify add and play around with the get mappings
+     */
 
 }
