@@ -21,6 +21,45 @@ public class UserOrder {
     private String customerId;
     private String product;
     private int quantity;
+
+    
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+
+
+    public String getProduct() {
+        return product;
+    }
+
+
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
+
+
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
+
+
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+
+
     @Override
     public String toString() {
         return "UserOrder [customerId=" + customerId + ", product=" + product + ", quantity=" + quantity + "]";
