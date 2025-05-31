@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /*
@@ -44,6 +45,13 @@ public class HomeController {
 
     /*
      * Now we have seen out get route in Action. feel free to modify add and play around with the get mappings
+     * The PostMapping or the post request routes, allows users or client to send request to the server
      */
+
+     @PostMapping("/post")
+     @ResponseStatus(HttpStatus.CREATED)
+     public String CreatePost(){
+         return "post created!!!";
+     }
 
 }
