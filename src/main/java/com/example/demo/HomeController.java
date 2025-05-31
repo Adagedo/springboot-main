@@ -80,6 +80,9 @@ public class HomeController {
      * which means we cannot handel our request as strings
      * so we Have to create our custom Data type to accomondate the users request.
      * Create a new java file and name the file UserOrder.java
+     * Now we want to create our custom request data type inclusting the kinda data we want the client to send to server.
+     * 
      */
+    
 
 }
