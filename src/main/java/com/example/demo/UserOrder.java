@@ -20,4 +20,9 @@ public class UserOrder {
     private String customerId;
     private String product;
     private int quantity;
+    @Override
+    public String toString() {
+        return "UserOrder [customerId=" + customerId + ", product=" + product + ", quantity=" + quantity + "]";
+    }
+    
 }
