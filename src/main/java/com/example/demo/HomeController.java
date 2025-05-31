@@ -32,8 +32,14 @@ public class HomeController {
     // a get request routes
     @GetMapping("/")
     @ResponseStatus(HttpStatus.OK)// here, you can customise your response status
-    public String Home(){
+    public String Home() {
         return "Home routes";
+    }
+    // a routes that in the future will return a list of post from our users
+    @GetMapping("/post")
+    @ResponseStatus(HttpStatus.OK)
+    public String getPost(){
+        return "fetching user's post...";
     }
 
 }
