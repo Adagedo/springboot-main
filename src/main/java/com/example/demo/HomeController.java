@@ -19,6 +19,13 @@ public class HomeController {
      * carefully observe and see this, 'Tomcat initialized with port 8080 (http)' which signified your project is running on localhost
      * port 8080
      * go to your browser and type 'http://localhost:8080', and your are up and running. you just build your first spring-boot application
+     *     @RequestMapping("/")
+            public String main() {
+                return "root-main.html";
+            }
+     *  the above code renders a html file to the browser or as we say to the client.
+     * we are going to dive a little into building or creating our own apis in spring
+     * enjoy...
      */
     @RequestMapping("/")
     public String main() {
