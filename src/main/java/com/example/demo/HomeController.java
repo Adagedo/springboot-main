@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /*
@@ -83,6 +84,17 @@ public class HomeController {
      * Now we want to create our custom request data type inclusting the kinda data we want the client to send to server.
      * 
      */
-    
+
+     @PostMapping("/order")
+     @ResponseStatus(HttpStatus.CREATED)
+     public String userOrder(@RequestBody UserOrder userOrderdata) {
+        /*
+         * Now you can see that our userOrderdata data is of type the class we created `UserOrder`
+         * Now in the UserOrder class, we can specify the data we want to recieve from the client.
+         * But before that, try sending a post request to this endpoint as observe your response.
+         */
+         return "your order data" + userOrderdata;
+     }
+
 
 }
