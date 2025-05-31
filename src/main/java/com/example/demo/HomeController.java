@@ -69,6 +69,8 @@ public class HomeController {
          * Now The main reason why we are not getting a response is because spring does not know what the userRequestDAta is.
          * Like spring will be :) ohh what is this I dont underStand this... argurment here.
          * This is where another annotations comes in which your seeing currently Know as the requetBody
+         * Now After adding the requestbody annation, send a request and observe the response, you can see the data you sent right??
+         * well, this is how spring handels post Request. In an a real world project, additional logic will be implemented to either save the request in a database.
          */
         return "post created!!!" + "here is the data you sent" + userRequestData;
     }
