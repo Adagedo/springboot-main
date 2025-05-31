@@ -74,5 +74,12 @@ public class HomeController {
          */
         return "post created!!!" + "here is the data you sent" + userRequestData;
     }
+    /*
+     * Now we have seen how to handel request sent fro our clients.
+     * But this request if you can see, we are Accepting a String data, but ideally the web transfers data in form of Json,
+     * which means we cannot handel our request as strings
+     * so we Have to create our custom Data type to accomondate the users request.
+     * Create a new java file and name the file UserOrder.java
+     */
 
 }
