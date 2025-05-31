@@ -17,6 +17,7 @@ public class UserOrder {
      * and we dont have acces to private filleds outside the class. 
      * But can we make them public??? well give a try and see the outcome. but using public is not the ideal approach.
      * Now the solution here is we implement getters and setters to our class to acces the private data.
+     * Now send a request a the post endpoints in the HomeController and you will get your outputs.
      */
     private String customerId;
     private String product;
