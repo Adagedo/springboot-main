@@ -60,8 +60,11 @@ public class HomeController {
 
     @PostMapping("/post")
     @ResponseStatus(HttpStatus.CREATED)
-    public String CreatePost() {
-        return "post created!!!";
+    public String CreatePost(String userRequestData) {
+        /*
+         * Now i Know its not ideal to send back a users data, but for the sake of our learning, its ok to.
+         */
+        return "post created!!!" + "here is the data you sent" + userRequestData;
     }
 
 }
