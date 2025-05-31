@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /*
@@ -60,7 +61,7 @@ public class HomeController {
 
     @PostMapping("/post")
     @ResponseStatus(HttpStatus.CREATED)
-    public String CreatePost(String userRequestData) {
+    public String CreatePost(@RequestBody String userRequestData) {
         /*
          * Now i Know its not ideal to send back a users data, but for the sake of our learning, its ok to.
          * Now be for Adding the annotation, try sending a request to the routes and oberves the response.
