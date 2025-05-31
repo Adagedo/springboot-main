@@ -16,6 +16,7 @@ public class UserOrder {
      * with our basic understanding of java we can we all Know that this filled we initialized are private filled.
      * and we dont have acces to private filleds outside the class. 
      * But can we make them public??? well give a try and see the outcome. but using public is not the ideal approach.
+     * Now the solution here is we implement getters and setters to our class to acces the private data.
      */
     private String customerId;
     private String product;
