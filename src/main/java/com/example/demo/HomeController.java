@@ -32,10 +32,11 @@ public class HomeController {
      */
     // a get request routes
     @GetMapping("/")
-    @ResponseStatus(HttpStatus.OK)// here, you can customise your response status
+    @ResponseStatus(HttpStatus.OK) // here, you can customise your response status
     public String Home() {
         return "Home routes";
     }
+
     // a routes that in the future will return a list of post from our users
     @GetMapping("/post")
     @ResponseStatus(HttpStatus.OK)
@@ -46,12 +47,21 @@ public class HomeController {
     /*
      * Now we have seen out get route in Action. feel free to modify add and play around with the get mappings
      * The PostMapping or the post request routes, allows users or client to send request to the server
+     *      @PostMapping("/post")
+            @ResponseStatus(HttpStatus.CREATED)
+            public String CreatePost(){
+                return "post created!!!";
+            }
+        Now try sending a post request and observe the error...
+        shocking right?? now the post request is a bit different. 
+        with the post request, we are recieving data from our clients. 
+        which means we need to include an instance of the data as an argurment to our createdPost function
      */
 
-     @PostMapping("/post")
-     @ResponseStatus(HttpStatus.CREATED)
-     public String CreatePost(){
-         return "post created!!!";
-     }
+    @PostMapping("/post")
+    @ResponseStatus(HttpStatus.CREATED)
+    public String CreatePost() {
+        return "post created!!!";
+    }
 
 }
